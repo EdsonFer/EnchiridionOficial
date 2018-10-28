@@ -149,6 +149,10 @@ header {
         visibility: hidden;
     }
 
+    header{
+        position: fixed;
+    }
+
     .bars {
         display: block;
     }
