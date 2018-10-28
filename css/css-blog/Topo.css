@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Locust Resistance';
+    src: url("../../fonts/Locust Resistance.ttf");
+    font-size: 1em;
+}
+
+#btn-menu {
+    display: none;
+}
+
+#titulo {
+    font-family: 'Locust Resistance';
+    font-size: 1.5em;
+    padding: 0.7em 0 0 2em;
+    width: 16%;
+    float: left;
+    color: aliceblue;
+}
+
+header {
+    background-color: #141418;
+    height: 60px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.bars {
+    font-size: 40px;
+    color: #ff0000;
+    float: left;
+    padding: 12px 0 10px 40px;
+    display: none;
+}
+
+.bars:hover {
+    color: rgba(255, 108, 0, 1);
+}
+
+.Menu {
+    margin-top: -20px;
+}
+
+.Menu ul {
+    list-style: none;
+    margin-left: 20%;
+    font-size: 1.5em;
+    display: flex;
+    transition: all .8s;
+}
+
+.Menu li a {
+    color: rgba(255, 108, 0, 1);
+    background-color: #141418;
+    text-decoration: none;
+    padding: 0.7em 1.4em;
+    display: block;
+    position: relative;
+}
+
+.Menu li a:hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.Menu li ul{
+    display:none;
+    position: absolute;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #141418;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    left: 24%;
+    width: 7%;
+}
+
+.Menu li:active ul{ 
+    display: inline-block;
+}
+
+#custom-search-input {
+    margin: 0;
+    margin-top: 14px;
+    padding: 0;
+}
+
+#custom-search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    background-color: transparent;
+    margin-bottom: 0;
+    border-color: rgba(255, 108, 0, 1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: white;
+}
+
+#procurar {
+    float: left;
+    width: 34%;
+    margin-top: -60px;
+    margin-left: 50%;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #D9230F;
+}
+
+.search-query:focus+button {
+    z-index: 3;
+}
+
+#Login {
+    float: right;
+    margin-top: -60px;
+    margin-right: 2%;
+}
+
+#Cadastre-se {
+    float: right;
+    margin-top: -60px;
+    margin-right: 6%;
+}
+
+@media (max-width:1280px) {
+
+    #titulo {
+        visibility: hidden;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .Menu ul {
+        position: absolute;
+        top: 60px;
+        margin-left: 0%;
+        background-color: #141418;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        margin-left: -70%;
+        background-color: rgba(20, 20, 24, 1);
+    }
+
+    .Menu li a {
+        border-bottom: 1px solid #ff0000;
+    }
+
+    .Menu li ul{
+        top: 306px;
+        width: 100%;
+        left: 0%;
+    }
+
+    #btn-menu:checked~.Menu ul {
+        margin-left: 0;
+    }
+
+    #procurar {
+        width: 40%;
+        margin-top: -52px;
+        margin-left: 7%;
+    }
+
+    #Cadastre-se {
+        visibility: hidden;
+    }
+
+    #Login {
+        margin-top: -52px;
+        margin-right: 13%;
+    }
+}
+
+@media (min-width:1281px) and (max-width:1795px) {
+    
+    #Cadastre-se {
+        margin-right: 8%;
+    }
+
+    #procurar {
+        margin-left: 56%;
+        width: 20%;
+    }
+    
+    #mais{
+        visibility: hidden;
+    }
+}

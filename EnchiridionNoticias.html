@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Notícias - Enchiridion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css-blog/Topo.css" />
+    <script type="text/javascript" src="lib/js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        //Cache dos elementos em variáveis
+        var botao = $('.Menu li');
+        var dropDown = $('.Menu li ul');
+        //Clica no botão para abrir e fechar o dropDown
+        botao.on('click', function(event) {
+          dropDown.stop(true, true).slideToggle();
+          //Evita que o evento seja notificado aos outros elementos. 
+          event.stopPropagation();
+        });
+      
+        //Clicando no html vai fechar o dorpDown
+        $('html').on('click', function() {
+          dropDown.slideUp();
+        });
+      });
+    </script>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars bars"></i></label>
+        <nav class="Menu">
+            <a href="#">
+                <div id="titulo">Enchiridion</div>
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">HQ</a></li>
+                <li><a href="#">Mangás</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#" id="mais">Mais   <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Grupos</a></li>
+                        <li><a href="#">Contato</a></li>                        
+                    </ul>
+                </li>
+            </ul>
+                    <div id="custom-search-input">
+                        <div class="input-group col-md-12" id="procurar">
+                            <input type="text" class="  search-query form-control" placeholder="Search" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-danger" type="button">
+                                    <span class=" glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+        </nav>
+        <div id="Login">
+                <a href="#"><button type="button" class="btn btn-danger">Entrar</button></a>
+            </div>
+            <div id="Cadastre-se">
+                <a href="#"><button type="button" class="btn btn-warning">Cadastrar</button></a>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
