@@ -76,7 +76,7 @@ header {
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     left: 24%;
-    width: 7%;
+    width: 6%;
 }
 
 .Menu li:active ul{ 
@@ -108,7 +108,7 @@ header {
     float: left;
     width: 34%;
     margin-top: -60px;
-    margin-left: 50%;
+    margin-left: 51%;
 }
 
 #custom-search-input button {
@@ -163,7 +163,7 @@ header {
         margin-left: 0%;
         background-color: #141418;
         width: 30%;
-        height: 100%;
+        min-height: 1000px;
         text-align: center;
         flex-direction: column;
         margin-left: -70%;
