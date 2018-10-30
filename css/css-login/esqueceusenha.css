@@ -10,7 +10,7 @@
 
 body {
     color: #fff;
-    background: url(../../img/FundoC.png) no-repeat center center fixed;
+    background: url(../../img/bakugo.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     /*Css safari e chrome*/
@@ -90,117 +90,50 @@ body {
     left: 2.5em;
 }
 
-
-.form-control {
-    height: 40px;
-    box-shadow: none;
-    color: #969fa4;
+.login-form {
+    width: 340px;
+    margin: 10% auto;
 }
 
-.form-control:focus {
-    border-color: #5cb85c;
-}
-
-.form-control,
-.btn {
-    border-radius: 3px;
-}
-
-.signup-form {
-    width: 400px;
-    margin: 6% auto;
-    padding: 30px 0;
-}
-
-.signup-form h2 {
-    color: #636363;
-    margin: 0 0 15px;
-    position: relative;
-    text-align: center;
-}
-
-.signup-form h2:before,
-.signup-form h2:after {
-    content: "";
-    height: 2px;
-    width: 30%;
-    background: #d4d4d4;
-    position: absolute;
-    top: 50%;
-    z-index: 2;
-}
-
-.signup-form h2:before {
-    left: 0;
-}
-
-.signup-form h2:after {
-    right: 0;
-}
-
-.signup-form .hint-text {
-    color: #999;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.signup-form form {
-    color: #999;
-    border-radius: 3px;
+.login-form form {
     margin-bottom: 15px;
-    background: #f2f3f7;
+    background: #f7f7f7;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     padding: 30px;
 }
 
-.signup-form .form-group {
-    margin-bottom: 20px;
+.login-form h2 {
+    margin: 0 0 15px;
 }
 
-.signup-form input[type="checkbox"] {
-    margin-top: 3px;
+.form-control,
+.btn {
+    min-height: 38px;
+    border-radius: 2px;
 }
 
-.signup-form .btn {
-    font-size: 16px;
+.btn {
+    font-size: 15px;
     font-weight: bold;
-    min-width: 140px;
-    outline: none !important;
 }
 
-.signup-form .row div:first-child {
-    padding-right: 10px;
+.form-group > .fa-user {
+    margin: -9% 5% auto;
+    float: right;
 }
 
-.signup-form .row div:last-child {
-    padding-left: 10px;
+.form-group > .fa-lock {
+    float: right;
+    margin: -9% 5% auto;
 }
 
-.signup-form a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.signup-form a:hover {
-    text-decoration: none;
-}
-
-.signup-form form a {
-    color: #5cb85c;
-    text-decoration: none;
-}
-
-.signup-form form a:hover {
-    text-decoration: underline;
-}
-
-.btn-success {
+.form-group > .btn-primary {
     color: #fff;
     background-color: #775cb8;
     border-color: #ae4c7e;
 }
 
-.btn-success:hover {
+.form-group > .btn-primary:hover {
     color: #fff;
     background-color: #6639d3;
     border-color: #ae4c7e;

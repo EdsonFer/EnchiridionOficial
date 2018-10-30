@@ -84,6 +84,7 @@ body {
     float: right;
     padding: 0.5% 1.2% 0.5% 1.2%;
     margin-right: 25px;
+    font-family: 'angrybirds';
 }
 
 #cadastrar {
@@ -110,11 +111,15 @@ body {
 #Cadastre-se {
     font-family: 'angrybirds';
     color: #ffffff;
-    background-color: #d72c13;
-    border-color: #ffcc00;
+    background-color: #6437ac;
+    border-color: #623396;
     font-size: 200%;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 40px 10px 40px;
     position: relative;
+}
+
+#Cadastre-se:hover {
+    background-color: #7713c3;
 }
 
 @media (max-width:414px) {
